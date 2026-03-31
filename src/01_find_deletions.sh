@@ -27,10 +27,11 @@ samtools view -u -f 2048 output/aligned.bam | \
 
 # EVIDENCE 3: THE VOID (Coverage Drop)
 # -f 2 strictly extracts perfectly normal "properly paired" reads.
-# genomecov creates a map of read depth. We use awk to find spots where depth is < 5x.
+# A homozygous deletion would lead to 0x coverage while a heterozygous deletion would lead to 10x coverage.
+# genomecov creates a map of read depth. We use awk to find spots where depth is < 15x (prioritise sensitivity)
 samtools view -u -f 2 output/aligned.bam | \
     bedtools genomecov -ibam stdin -bg | \
-    awk '$4 < 5' | \
+    awk '$4 < 15' | \
     bedtools merge -d 50 | \
     bedtools slop -b 100 -g data/genome.txt > output/del_ev3_void.bed
 
