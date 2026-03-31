@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="/Users/chaiyikang/Library/CloudStorage/OneDrive-NationalUniversityofSingapore/Life Science/ZB3101/Assignment 1/zb3101_ca1/data/reference.fa" locus="chrII:274736-279682" version="8">
+    <Resources>
+        <Resource path="/Users/chaiyikang/Library/CloudStorage/OneDrive-NationalUniversityofSingapore/Life Science/ZB3101/Assignment 1/zb3101_ca1/output/candidate_deletions.bed" type="bed"/>
+        <Resource path="/Users/chaiyikang/Library/CloudStorage/OneDrive-NationalUniversityofSingapore/Life Science/ZB3101/Assignment 1/zb3101_ca1/output/candidate_inversions.bed" type="bed"/>
+        <Resource path="/Users/chaiyikang/Library/CloudStorage/OneDrive-NationalUniversityofSingapore/Life Science/ZB3101/Assignment 1/zb3101_ca1/output/aligned.bam" type="bam"/>
+        <Resource path="/Users/chaiyikang/Library/CloudStorage/OneDrive-NationalUniversityofSingapore/Life Science/ZB3101/Assignment 1/zb3101_ca1/output/candidate_insertions.bed" type="bed"/>
+    </Resources>
+    <Panel height="1834" name="Panel1774318811306" width="1263">
+        <Track attributeKey="aligned.bam Coverage" autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" fontSize="10" id="/Users/chaiyikang/Library/CloudStorage/OneDrive-NationalUniversityofSingapore/Life Science/ZB3101/Assignment 1/zb3101_ca1/output/aligned.bam_coverage" name="aligned.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="51.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="aligned.bam Junctions" autoScale="true" clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" groupByStrand="false" height="60" id="/Users/chaiyikang/Library/CloudStorage/OneDrive-NationalUniversityofSingapore/Life Science/ZB3101/Assignment 1/zb3101_ca1/output/aligned.bam_junctions" maxdepth="50" name="aligned.bam Junctions" visible="false"/>
+        <Track attributeKey="aligned.bam" clazz="org.broad.igv.sam.AlignmentTrack" color="185,185,185" displayMode="EXPANDED" experimentType="OTHER" fontSize="10" id="/Users/chaiyikang/Library/CloudStorage/OneDrive-NationalUniversityofSingapore/Life Science/ZB3101/Assignment 1/zb3101_ca1/output/aligned.bam" name="aligned.bam" visible="true">
+            <RenderOptions colorOption="UNEXPECTED_PAIR" duplicatesOption="FILTER" viewPairs="true"/>
+        </Track>
+    </Panel>
+    <Panel height="171" name="FeaturePanel" width="1263">
+        <Track attributeKey="Reference sequence" clazz="org.broad.igv.track.SequenceTrack" fontSize="10" id="Reference sequence" name="Reference sequence" sequenceTranslationStrandValue="+" shouldShowTranslation="false" visible="true"/>
+        <Track attributeKey="candidate_deletions.bed" clazz="org.broad.igv.track.FeatureTrack" colorScale="ContinuousColorScale;0.0;0.0;255,255,255;0,0,178" fontSize="10" groupByStrand="false" id="/Users/chaiyikang/Library/CloudStorage/OneDrive-NationalUniversityofSingapore/Life Science/ZB3101/Assignment 1/zb3101_ca1/output/candidate_deletions.bed" name="candidate_deletions.bed" visible="true"/>
+        <Track attributeKey="candidate_insertions.bed" clazz="org.broad.igv.track.FeatureTrack" colorScale="ContinuousColorScale;0.0;2.0;255,255,255;0,0,178" fontSize="10" groupByStrand="false" id="/Users/chaiyikang/Library/CloudStorage/OneDrive-NationalUniversityofSingapore/Life Science/ZB3101/Assignment 1/zb3101_ca1/output/candidate_insertions.bed" name="candidate_insertions.bed" visible="true"/>
+        <Track attributeKey="candidate_inversions.bed" clazz="org.broad.igv.track.FeatureTrack" colorScale="ContinuousColorScale;0.0;4.0;255,255,255;0,0,178" fontSize="10" groupByStrand="false" id="/Users/chaiyikang/Library/CloudStorage/OneDrive-NationalUniversityofSingapore/Life Science/ZB3101/Assignment 1/zb3101_ca1/output/candidate_inversions.bed" name="candidate_inversions.bed" visible="true"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.009787928221859706,0.7128874388254486"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>
